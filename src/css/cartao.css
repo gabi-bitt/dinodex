@@ -1,86 +1,100 @@
+/* Estilo principal de cada cartão */
 .cartao-dino {
-    display: none;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 10px;
-    width: 430px;
-    
-
+    display: none; /* Por padrão, os cartões ficam escondidos */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /* Sombra ao redor do cartão */
+    border-radius: 10px; /* Arredonda os cantos */
+    width: 430px; /* Largura fixa do cartão */
 }
 
+/* Parte superior do cartão */
 .cartao-dino .cartao-topo {
-    padding: 30px 40px 0;
+    padding: 30px 40px 0; /* Espaçamento interno (cima, lados, baixo) */
 }
 
+/* Nome do dinossauro */
 .cartao-dino .nome {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Espaço abaixo do nome */
 }
 
+/* Tag que mostra o tipo do dino (carnívoro, herbívoro etc) */
 .cartao-dino .tipo {
-    font-size: 12px;
-    background-color: #FFFFFF;
-    opacity: 0.7;
-    border-radius: 10px;
-    padding: 2px 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 12px; /* Texto pequeno */
+    background-color: #FFFFFF; /* Fundo branco */
+    opacity: 0.7; /* Um pouco transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 2px 10px; /* Espaçamento interno */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /* Sombra leve */
 }
 
+/* Linha que contém o nome e o número do dino */
 .cartao-dino .detalhes {
-    color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: #FFFFFF; /* Texto branco */
+    display: flex; /* Organiza em linha */
+    justify-content: space-between; /* Nome à esquerda, número à direita */
+    align-items: center; /* Centraliza verticalmente */
 }
 
+/* Área da imagem grande do dino */
 .cartao-dino .cartao-imagem {
-    width: 350px;
-    height: 350px;
+    width: 350px; /* Largura da imagem */
+    height: 350px; /* Altura da imagem */
 }
 
+/* Imagem do dino dentro do cartão */
 .cartao-dino img {
-    max-height: 100%;
+    max-height: 100%; /* Garante que a imagem não ultrapasse o tamanho da caixa */
 }
 
+/* Parte inferior do cartão (caixa branca com infos e curiosidades) */
 .cartao-dino .cartao-informacoes {
-    display: flex;
-    justify-content: space-between;
-    background-color: #FFFFFF;
-    padding: 80px 30px 50px;
-    margin-top: -70px;
-    border-bottom-left-radius: 8px;
+    display: flex; /* Divide em duas colunas (infos e curiosidades) */
+    justify-content: space-between; /* Espaço igual entre as colunas */
+    background-color: #FFFFFF; /* Fundo branco */
+    padding: 80px 30px 50px; /* Espaçamento interno (cima, lados, baixo) */
+    margin-top: -70px; /* Sobe um pouco para sobrepor a parte de cima */
+    border-bottom-left-radius: 8px; /* Bordas arredondadas embaixo */
     border-bottom-right-radius: 8px;
 }
 
+/* Títulos "infos" e "curiosidades" */
 .cartao-dino .cartao-informacoes h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #6B727A;
+    font-size: 20px; /* Tamanho da fonte */
+    margin-bottom: 15px; /* Espaço embaixo do título */
+    border-bottom: 1px solid #6B727A; /* Linha separando o título */
 }
 
-.cartao-dino .cartao-informacoes .infos, .cartao-dino .cartao-informacoes .sobre {
-    padding: 0 10px;
-    width: 180px;
+/* Cada coluna (infos e curiosidades) */
+.cartao-dino .cartao-informacoes .infos, 
+.cartao-dino .cartao-informacoes .sobre {
+    padding: 0 10px; /* Espaçamento lateral */
+    width: 180px; /* Largura fixa de cada coluna */
 }
 
-.cartao-dino .cartao-informacoes .sobre ul li, .cartao-dino .cartao-informacoes .infos ul li {
-    border-bottom: 1px solid #C3C4C5;
-    padding: 0 0 5px;
-    margin-bottom: 5px;
-    font-size: 15px;
+/* Estilo das listas (infos e curiosidades) */
+.cartao-dino .cartao-informacoes .sobre ul li, 
+.cartao-dino .cartao-informacoes .infos ul li {
+    border-bottom: 1px solid #C3C4C5; /* Linha separando cada item */
+    padding: 0 0 5px; /* Espaço interno abaixo do texto */
+    margin-bottom: 5px; /* Espaço entre os itens */
+    font-size: 15px; /* Tamanho do texto */
 }
 
+/* Torna o cartão visível quando recebe a classe "aberto" */
 .cartao-dino.aberto {
-    display: block;
+    display: block; /* Mostra o cartão */
 }
 
+/* Cores diferentes para cada tipo de dino */
 .tipo-carnivoro {
-    background-color: brown;
+    background-color: brown; /* Fundo marrom */
 }
 
 .tipo-herbivoro {
-    background-color: #49D0B0;
+    background-color: #49D0B0; /* Verde água */
 }
 
 .tipo-onivoro {
-    background-color: #76BEFE;
+    background-color: #76BEFE; /* Azul claro */
 }
+
 
