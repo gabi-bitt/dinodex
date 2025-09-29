@@ -1,37 +1,42 @@
+/* Área da listagem (barra lateral com os nomes dos dinos) */
 .listagem {
-    max-width: 200px;
+    max-width: 200px; /* Largura máxima da lista */
 }
 
+/* Cada item da lista (um dinossauro) */
 .listagem .dino {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    background-color: #6B727A;
-    color: #FFFFFF;
-    padding: 0 5px;
-    cursor: pointer;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    min-height: 70px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    transition: 0.15s ease-in-out;
+    display: flex; /* Coloca imagem e nome lado a lado */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: space-between; /* Espaça imagem e nome */
+    margin-bottom: 10px; /* Espaço entre um item e outro */
+    background-color: #6B727A; /* Cor de fundo padrão */
+    color: #FFFFFF; /* Cor do texto */
+    padding: 0 5px; /* Espaçamento interno (só nas laterais) */
+    cursor: pointer; /* Muda o cursor para "mãozinha" */
+    border-top-left-radius: 30px; /* Arredonda o canto superior esquerdo */
+    border-bottom-left-radius: 30px; /* Arredonda o canto inferior esquerdo */
+    min-height: 70px; /* Altura mínima do item */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /* Sombra leve */
+    transition: 0.15s ease-in-out; /* Transição suave para efeitos */
 }
 
+/* Efeito quando passa o mouse em cima do item */
 .listagem .dino:hover {
-    transform: scale(1.05);
-
+    transform: scale(1.05); /* Dá um leve zoom no item */
 }
 
+/* Imagem do dinossauro dentro da lista */
 .listagem .dino img {
-    width: 25%;
-    border-radius: 50%;
+    width: 25%; /* Imagem ocupa 25% do espaço do item */
+    border-radius: 50%; /* Deixa a imagem redonda */
 }
 
+/* Nome do dinossauro na lista */
 .listagem .dino span {
-    padding-right: 20px;
+    padding-right: 20px; /* Afasta o texto da borda direita */
 }
 
+/* Estilo para o item ativo (selecionado) */
 .listagem .dino.ativo {
-    background-color: #FA6668;
+    background-color: #FA6668; /* Cor diferente para destacar */
 }
