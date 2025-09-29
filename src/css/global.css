@@ -1,18 +1,23 @@
+/* Estilos gerais do corpo da página */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-image: url('imagem-fundo.png');
-    background-size: cover;  
-}
-main {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
+    font-family: 'Poppins', sans-serif; /* Fonte padrão usada no site */
+    background-image: url('imagem-fundo.png'); /* Coloca uma imagem como fundo */
+    background-size: cover;  /* Faz a imagem de fundo cobrir toda a tela */
 }
 
-.dinodex {
-    display: flex;
-    gap: 30px;
-    padding: 30px 0;   
+/* Estilo principal da área <main> */
+main {
+    min-height: 100vh; /* Faz ocupar no mínimo toda a altura da tela */
+    display: flex; /* Organiza os elementos em linha usando flexbox */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
 }
+
+/* Container principal da dinodex (cartões + listagem) */
+.dinodex {
+    display: flex; /* Coloca os elementos lado a lado (cartões e lista) */
+    gap: 30px; /* Espaço entre eles */
+    padding: 30px 0;  /* Espaçamento em cima e embaixo */
+}
+
+
