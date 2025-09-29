@@ -1,56 +1,63 @@
+/* Regras que só vão valer em telas menores que 750px */
 @media (max-width: 750px) {
+
+    /* Deixa as fontes menores no celular */
     body {
         font-size: 12px;
     }
 
+    /* Dinodex (cartões + lista) passa de lado a lado → para empilhado */
     .dinodex {
-        flex-direction: column;
-        padding: 30px 0;
+        flex-direction: column; /* Coloca em coluna no celular */
+        padding: 30px 0; /* Espaçamento em cima e embaixo */
     }
 
+    /* Reduz o tamanho máximo do cartão */
     .cartao-dino {
         max-width: 300px;
     }
 
+    /* Reduz o tamanho da imagem dentro do cartão */
     .cartao-dino .cartao-imagem {
         width: 200px;
         height: 200px;
     }
 
+    /* Ajusta a parte branca com infos (fica mais compacta) */
     .cartao-dino .cartao-informacoes {
-        padding: 60px 30px 30px;
-        margin-top: -50px;
+        padding: 60px 30px 30px; /* Menos espaço interno */
+        margin-top: -50px; /* Sobe a área branca pra grudar na imagem */
     }
 
+    /* Deixa os títulos menores no celular */
     .cartao-dino .cartao-informacoes h3 {
         font-size: 16px;
     }
 
+    /* Aumenta a largura da listagem */
     .listagem {
         max-width: 300px;
     }
 
+    /* Muda a lista para "grade" (vários itens lado a lado) */
     .listagem ul {
-        display: flex;
-        gap: 8px;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: flex; /* Organiza lado a lado */
+        gap: 8px; /* Espaço entre os itens */
+        flex-wrap: wrap; /* Quebra linha se faltar espaço */
+        justify-content: space-between; /* Distribui os itens */
     }
 
+    /* Ajusta cada item da lista no celular */
     .listagem .dino {
-        width: 140px;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        margin-bottom: 0;
-        border-radius: 8px;
+        width: 140px; /* Cada item fica menor */
+        border-top-left-radius: 0; /* Tira arredondamento da esquerda */
+        border-bottom-left-radius: 0; 
+        margin-bottom: 0; /* Remove o espaço embaixo */
+        border-radius: 8px; /* Deixa os cantos mais suaves */
     }
+
+    /* Diminui o espaço do texto no item */
     .listagem .dino span {
         padding-right: 5px;
     }
-
-
-
-
-
-
 }
